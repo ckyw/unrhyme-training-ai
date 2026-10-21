@@ -68,7 +68,7 @@ Claude Code 2.1.275 이상에서는 한 줄로도 설치할 수 있습니다.
 | [`examples/job-matcher/.claude-plugin/plugin.json`](./examples/job-matcher/.claude-plugin/plugin.json) | 플러그인 정보 |
 | [`examples/job-matcher/SKILL.md`](./examples/job-matcher/SKILL.md) | 스킬 본문 |
 
-`claude plugin validate`로 마켓플레이스와 플러그인 검증을 통과했습니다(경고: 플러그인 `version` 미지정). Claude.ai에서 쓰려면 별도로 ZIP 업로드가 필요합니다.
+플러그인 버전은 `1.0`이며, `claude plugin validate`로 마켓플레이스와 플러그인 검증을 통과했습니다. Claude.ai에서 쓰려면 별도로 ZIP 업로드가 필요합니다.
 
 ## 운영 원칙
 
