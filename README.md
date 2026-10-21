@@ -49,18 +49,31 @@ Job Matching POC를 위한 스킬입니다. 학습자가 가진 경력 자료를
 
 ### 설치 (Claude Code 마켓플레이스)
 
-이 저장소는 `unrhyme-jd-fit`이라는 Claude Code 플러그인 마켓플레이스입니다. 아래 명령으로 `jd-fit-evaluator` 플러그인을 설치할 수 있습니다.
+이 저장소는 `unrhyme-jd-fit`이라는 Claude Code 플러그인 마켓플레이스입니다. 아래 두 방법 중 하나로 `jd-fit-evaluator` 플러그인을 설치할 수 있습니다.
+
+**방법 1. 일반 터미널에서 실행** (macOS 터미널, Windows PowerShell 등. Claude Code 세션 밖)
 
 ```bash
 claude plugin marketplace add ckyw/unrhyme-training-ai
 claude plugin install jd-fit-evaluator@unrhyme-jd-fit
 ```
 
-Claude Code 2.1.275 이상에서는 한 줄로도 설치할 수 있습니다.
+설치 확인: `claude plugin list`
+
+**방법 2. Claude Code 세션 안에서 입력** (`claude`로 세션을 연 뒤 슬래시 명령으로 입력)
+
+```text
+/plugin marketplace add ckyw/unrhyme-training-ai
+/plugin install jd-fit-evaluator@unrhyme-jd-fit
+```
+
+Claude Code 2.1.275 이상에서는 마켓플레이스 등록과 설치를 한 줄로도 할 수 있습니다.
 
 ```text
 /plugin install jd-fit-evaluator --marketplace ckyw/unrhyme-training-ai
 ```
+
+> `claude plugin ...`은 터미널 명령이고, `/plugin ...`은 Claude Code 세션 안의 슬래시 명령입니다. 두 형태를 섞어 쓰지 않도록 주의하세요.
 
 | 파일 | 역할 |
 |---|---|
