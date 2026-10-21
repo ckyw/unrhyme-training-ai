@@ -1,0 +1,14 @@
+{
+  "name": "unrhyme-jd-fit",
+  "description": "unrhyme Training: JD 적합성 평가 스킬",
+  "owner": {
+    "name": "unrhyme"
+  },
+  "plugins": [
+    {
+      "name": "jd-fit-evaluator",
+      "source": "./examples/job-matcher",
+      "description": "경력 자료(PDF·docx·공개 포트폴리오 URL)와 채용공고(JD) 텍스트를 대조해 근거 중심 정성 평가를 Markdown 리포트로 작성합니다."
+    }
+  ]
+}

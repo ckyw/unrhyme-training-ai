@@ -45,7 +45,30 @@ Job Matching POC를 위한 스킬입니다. 학습자가 가진 경력 자료를
 - 자료에 없는 스킬은 맞는 것으로 판정하지 않습니다.
 - 개인정보·회사 기밀·API 키는 리포트에 옮기지 않습니다.
 
-> 현재 스킬 상태: 초안이며 실제 이력서·JD로 시범 실행한 검증은 아직 하지 않았습니다. 다른 Claude 계정에 ZIP으로 올리려면 폴더 이름이 스킬 이름(`jd-fit-evaluator`)과 같아야 하는데, 현재 저장소 경로는 `examples/job-matcher/`이므로 배포용 구조는 별도로 준비해야 합니다.
+> 현재 스킬 상태: 초안이며 실제 이력서·JD로 시범 실행한 검증은 아직 하지 않았습니다.
+
+### 설치 (Claude Code 마켓플레이스)
+
+이 저장소는 `unrhyme-jd-fit`이라는 Claude Code 플러그인 마켓플레이스입니다. 아래 명령으로 `jd-fit-evaluator` 플러그인을 설치할 수 있습니다.
+
+```bash
+claude plugin marketplace add ckyw/unrhyme-training-ai
+claude plugin install jd-fit-evaluator@unrhyme-jd-fit
+```
+
+Claude Code 2.1.275 이상에서는 한 줄로도 설치할 수 있습니다.
+
+```text
+/plugin install jd-fit-evaluator --marketplace ckyw/unrhyme-training-ai
+```
+
+| 파일 | 역할 |
+|---|---|
+| [`.claude-plugin/marketplace.json`](./.claude-plugin/marketplace.json) | 마켓플레이스 정의 (`name`: `unrhyme-jd-fit`, `owner`: `unrhyme`) |
+| [`examples/job-matcher/.claude-plugin/plugin.json`](./examples/job-matcher/.claude-plugin/plugin.json) | 플러그인 정보 |
+| [`examples/job-matcher/SKILL.md`](./examples/job-matcher/SKILL.md) | 스킬 본문 |
+
+`claude plugin validate`로 마켓플레이스와 플러그인 검증을 통과했습니다(경고: 플러그인 `version` 미지정). Claude.ai에서 쓰려면 별도로 ZIP 업로드가 필요합니다.
 
 ## 운영 원칙
 
